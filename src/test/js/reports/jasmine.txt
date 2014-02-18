@@ -1,0 +1,10 @@
+[4mRunning "jasmine:src" (jasmine) task[24m
+Testing jasmine specs via PhantomJS
+
+ Validate Form
+   - Empty Trailing spaces......✓
+
+1 spec in 0.002s.
+[32m>> [39m0 failures
+
+[32mDone, without errors.[39m
