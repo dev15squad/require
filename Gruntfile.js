@@ -11,7 +11,7 @@ module.exports = function(grunt) {
 
 	grunt.initConfig({
 		globalConfig : globalConfig,
-		pkg: grunt.file.readJSON('package.json'), // the package file to use
+		pkg: grunt.file.readJSON('package.json'),
 		jshint: {
 			tests : ['<%= globalConfig.jsTestDir %>/src/*.js', '${jsTestDir}tests/*.js'],
 			src : ['<%= globalConfig.jsTestDir %>/src/*.js', '#{jsTestDir}/tests/*.js']
@@ -42,7 +42,6 @@ module.exports = function(grunt) {
 				specs : '<%= globalConfig.jsTestDir %>/specs/**/*.js'
 			}
 		}
-
 	});
 
 grunt.loadNpmTasks('grunt-contrib-qunit');
@@ -50,7 +49,7 @@ grunt.loadNpmTasks('grunt-contrib-watch');
 grunt.loadNpmTasks('grunt-contrib-jshint');
 grunt.loadNpmTasks('grunt-sync');
 grunt.loadNpmTasks('grunt-contrib-jasmine');
-grunt.registerTask('taskName', ['taskToRun', 'anotherTask']);
+
 grunt.registerTask('default', 'jasmine');
 
 
